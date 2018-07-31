@@ -1,9 +1,5 @@
-//: Playground - noun: a place where people can play
-
-import Cocoa
-
-/**
-Vehicles can have different properties and functionality.
+/*:
+## Vehicles can have different properties and functionality.
 
 All Vehicles:
   - Have a speed at which they move
@@ -26,7 +22,7 @@ Create the following Vehicles types: Car, Bus, ContainerShip, Boat, Motorcycle
 ----
 
 The solution below does not use protocols, it relies solely on subclassing. Can you use protocols to improve the solution?
-**/
+*/
 
 typealias KilometersPerHour = Double
 typealias Kilometers = Double
@@ -113,5 +109,5 @@ for v in vehicles {
   }
 
   
-  print("\(v.dynamicType)\(amountOfWindowsSubstring) needs \(v.travelDuration(100)) to travel 100 kilometers.")
+    print("\(type(of: v)) \(amountOfWindowsSubstring) needs \(v.travelDuration(distance: 100)) to travel 100 kilometers.")
 }
